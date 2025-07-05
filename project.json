@@ -1,0 +1,220 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Frames are locating based on ration of your resolution.\nTheoretically 2k,4k,8k won't be a matter.\nSupported ratios are [16:9] and [21:9]\nI have tested [1920x1080][2560x1440][3840x2160] and [2560x1080][3440x1440] resolutions with Virtual resolution.\nUpscaled few low rez images.\n\nThere are lots of bugs since Im not a PRO developer, so\nTo make all Slideshows and video to work properly, Reactivate the Wallpaper after choosing ur favorite theme and video.\nIDK how to solve this problem tho, Let it be.\n\nAlso, due to the limitation of size in uploading project, (Approx 1GB)\nphotos and videos are downgraded.\n\nTherefore,\nFor people who wants original(Higher) resolution of Photos and Videos,\nPlz download the file through the link below and OVERWRITE it into the project folder.\n\nIt includes\nOriginal/Upscaled photos\nFrame Interpolated videos (60fps)\n\nhttps://drive.google.com/file/d/14brXNq0w0jfyAtojXMU6UsqA8TtQ0Efn/view?usp=sharing\n\nIf you don't know where this Wallpaper is,\nit should be saved in\nC:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\431960\\1288276107 (ref.my PC)\n\nStill not found?\njust right click on 'IU - 아이유' in the Wallpaper Engine Application and 'Open in Explorer'.\n\n\n++++2021/07/12/++++\nAdded RoseGold Theme for [21:9]\nAdded Video Shuffle Function.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"Theme" : 
+			{
+				"index" : 0,
+				"options" : 
+				[
+					{
+						"label" : "Pink[16:9]",
+						"value" : 1
+					},
+					{
+						"label" : "Blue[16:9]",
+						"value" : 2
+					},
+					{
+						"label" : "Black[16:9]",
+						"value" : 3
+					},
+					{
+						"label" : "White[16:9]",
+						"value" : 4
+					},
+					{
+						"label" : "Silver[16:9]",
+						"value" : 5
+					},
+					{
+						"label" : "Celebrity[16:9]",
+						"value" : 6
+					},
+					{
+						"label" : "Green[21:9]",
+						"value" : 7
+					},
+					{
+						"label" : "Celebrity[21:9]",
+						"value" : 8
+					},
+					{
+						"label" : "Silver[21:9]",
+						"value" : 9
+					},
+					{
+						"label" : "Rose Gold[21:9]",
+						"value" : 10
+					}
+				],
+				"order" : 100,
+				"text" : "Theme",
+				"type" : "combo",
+				"value" : 5
+			},
+			"Volume" : 
+			{
+				"fraction" : false,
+				"index" : 2,
+				"max" : 100,
+				"min" : 0,
+				"order" : 102,
+				"text" : "Volume",
+				"type" : "slider",
+				"value" : 50
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.6980392156862745 0.5568627450980392 0.5607843137254902"
+			},
+			"videoSrc" : 
+			{
+				"index" : 1,
+				"options" : 
+				[
+					{
+						"label" : "좋은 날(Good Day)",
+						"value" : 0
+					},
+					{
+						"label" : "너랑 나(You&I)",
+						"value" : 1
+					},
+					{
+						"label" : "하루 끝(Every End of the Day)",
+						"value" : 2
+					},
+					{
+						"label" : "분홍신(The red shoes)",
+						"value" : 3
+					},
+					{
+						"label" : "금요일에 만나요(Friday)",
+						"value" : 4
+					},
+					{
+						"label" : "나의 옛날이야기(Naui Yetnal Iyagi)",
+						"value" : 5
+					},
+					{
+						"label" : "스물셋(Twenty-three)",
+						"value" : 6
+					},
+					{
+						"label" : "무릎(Knees)",
+						"value" : 7
+					},
+					{
+						"label" : "푸르던(The Shower)",
+						"value" : 8
+					},
+					{
+						"label" : "팔레트(Palette)",
+						"value" : 9
+					},
+					{
+						"label" : "밤편지(Through the Night)",
+						"value" : 10
+					},
+					{
+						"label" : "이런엔딩(Ending Scene)",
+						"value" : 11
+					},
+					{
+						"label" : "잊어야 하는마음으로(With the Heart to Forget You)",
+						"value" : 12
+					},
+					{
+						"label" : "잠 못 드는 밤 비는 내리고(Sleepless rainy night)",
+						"value" : 13
+					},
+					{
+						"label" : "삐삐(BBIBBI)",
+						"value" : 14
+					},
+					{
+						"label" : "블루밍(Blueming)",
+						"value" : 15
+					},
+					{
+						"label" : "블루밍라이브(Blueming Live)",
+						"value" : 16
+					},
+					{
+						"label" : "시간의바깥(above the time)",
+						"value" : 17
+					},
+					{
+						"label" : "시간의바깥라이브(above the time Live)",
+						"value" : 18
+					},
+					{
+						"label" : "에잇(eight)",
+						"value" : 19
+					},
+					{
+						"label" : "에잇 라이브(eight Live)",
+						"value" : 20
+					},
+					{
+						"label" : "Celebrity",
+						"value" : 21
+					},
+					{
+						"label" : "Celebrity Live",
+						"value" : 22
+					},
+					{
+						"label" : "라일락(LILAC)",
+						"value" : 23
+					},
+					{
+						"label" : "Coin",
+						"value" : 24
+					},
+					{
+						"label" : "Coin Live",
+						"value" : 25
+					}
+				],
+				"order" : 101,
+				"text" : "Video",
+				"type" : "combo",
+				"value" : 23
+			},
+			"videoloop" : 
+			{
+				"index" : 3,
+				"order" : 103,
+				"text" : "Video Loop",
+				"type" : "bool",
+				"value" : true
+			},
+			"videosuffle" : 
+			{
+				"index" : 4,
+				"order" : 104,
+				"text" : "Video Suffle",
+				"type" : "bool",
+				"value" : true
+			}
+		}
+	},
+	"monetization" : false,
+	"preview" : "preview.gif",
+	"tags" : [ "Girls" ],
+	"title" : "IU - 아이유",
+	"type" : "web",
+	"version" : 8,
+	"visibility" : "public",
+	"workshopid" : "1288276107",
+	"workshopurl" : "steam://url/CommunityFilePage/1288276107"
+}
