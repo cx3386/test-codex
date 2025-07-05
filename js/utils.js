@@ -486,11 +486,7 @@ function setVideo(index, x, y, w, h, fadeinTime, showTime, blur,file,fNum,vidNum
     video.id = "videoPV";
     video.volume = vidVol;
     video.height = h;
-	if (typeof vidNum === 'string' || vidNum instanceof String){
-		video.src=vidNum}
-	else{
-		video.src = vidNum+".webm";
-	}
+        video.src = getVideoPath(vidNum);
     video.autoplay = "autoplay";
     video.loop = "loop";
     video.style.position = "absolute";
@@ -534,7 +530,7 @@ function setLoopVideo(index, x, y, w, h, fadeinTime, showTime, blur,file,fNum,vi
     var video = document.createElement("video");
     var n = 26;//Number of Video
     video.id = "videoPV";
-    video.src = vidNum+".webm";
+    video.src = getVideoPath(vidNum);
     video.volume = vidVol;
     video.height = h;
     video.autoplay = "autoplay";
@@ -544,11 +540,11 @@ function setLoopVideo(index, x, y, w, h, fadeinTime, showTime, blur,file,fNum,vi
     function next() {
      vidNum++;
       if (vidNum<n) {
-        video.src = vidNum+".webm";
+        video.src = getVideoPath(vidNum);
       }
       else if(vidNum>=n){
-	vidNum=0;
-	video.src = vidNum+".webm";
+        vidNum=0;
+        video.src = getVideoPath(vidNum);
       }
 	video.play();
     }
@@ -601,7 +597,7 @@ function setShuffleVideo(index, x, y, w, h, fadeinTime, showTime, blur,file,fNum
     var VidList = [...Array(n).keys()];
     shuffle(VidList);
     video.id = "videoPV";
-    video.src = vidNum+".webm";
+    video.src = getVideoPath(vidNum);
     video.volume = vidVol;
     video.height = h;
     video.autoplay = "autoplay";
@@ -610,12 +606,12 @@ function setShuffleVideo(index, x, y, w, h, fadeinTime, showTime, blur,file,fNum
     video.addEventListener('ended', next, false);	
     function next() {
       if (vidNum<n) {
-        video.src = VidList[vidNum]+".webm";
+        video.src = getVideoPath(VidList[vidNum]);
       }
       else if(vidNum>=n){
 	shuffle(VidList);
-	vidNum=0;
-	video.src = VidList[vidNum]+".webm";
+        vidNum=0;
+        video.src = getVideoPath(VidList[vidNum]);
       }
 	video.play();
        vidNum++;
@@ -684,4 +680,11 @@ function getW() {
 
 function getH() {
     return screen.height * window.devicePixelRatio;
+}
+
+function getVideoPath(num) {
+    if (typeof num === 'string' || num instanceof String) {
+        return num;
+    }
+    return String(num).padStart(2, '0') + '.webm';
 }
